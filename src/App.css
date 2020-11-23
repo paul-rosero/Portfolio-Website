@@ -1,1 +1,15 @@
+.homepage-grid {
+    background: #9CECFB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
 
+}
+.avatar-img {
+    height: 200px;
+    padding-top: 3em;
+}
+.link-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
