@@ -1,13 +1,6 @@
 /* Styling for the Homepage */
 .homepage-grid  {
-    background: #9CECFB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 .avatar-img {
     height: 250px;
@@ -51,27 +44,21 @@
     padding: 8px;
 }
 /* Styling for the About Me Page */
-.about-page-grid {
-    background: #9CECFB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .paragraph {
     padding-left: 6rem;
     padding-right: 6rem;
     text-align: center;
     font-weight: 600;
     ;
-  }
-  .about-page h1 {
+}
+.about-page h1 {
     text-align: center;
     margin-top: 2rem;
     font-weight: bold;
-  }
+}
 /* Styling for the Resume Page */
+.resume-right-col {
+    background: #27221f;
+    color: white;
+}
 /* Styling for the Projects Page */
