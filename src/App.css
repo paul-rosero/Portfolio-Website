@@ -6,10 +6,32 @@ text-align: center;
 
 }
 .avatar-img {
-    height: 200px;
+    height: 250px;
     padding-top: 3em;
 }
 .link-name {
     font-size: 1.1rem;
     font-weight: bold;
+}
+.banner-text {
+    background-color: black;
+    opacity: .8;
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+}
+.banner-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.banner-text hr {
+    border-top: 5px dotted white;
+    width: 65%;
+    margin: auto;
+}
+.banner-text p {
+    font-size: 20px;
+    color: white;
+    padding: 1em;
 }
