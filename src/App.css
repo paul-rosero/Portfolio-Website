@@ -1,17 +1,17 @@
-.homepage-grid {
+/* Styling for the Homepage */
+.homepage-grid  {
     background: #9CECFB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-text-align: center;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .avatar-img {
     height: 250px;
-    padding-top: 3em;
+    padding-top: 5em;
 }
 .link-name {
     font-size: 1.1rem;
@@ -47,6 +47,19 @@ height: 100%;
 }
 .social-links i {
     color: white;
-    font-size: 5em;
+    font-size: 3em;
     padding: 8px;
 }
+/* Styling for the About Me Page */
+.about-page-grid {
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Styling for the Resume Page */
+/* Styling for the Projects Page */
