@@ -13,7 +13,16 @@ class Resume extends Component {
                     </div>
                     <h2 style={{paddingTop: '1em'}}>Paul Rosero</h2>
                     <h5>Full Stack Web Developer</h5>
-                    <hr style={{ borderTop: '3px solid black', width: '60%'}} />
+                    <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
+                    <p>Info paragraph.</p>
+                    <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
+                    <h6>Address:</h6>
+                    <p>adress.</p>
+                    <h6>Phone:</h6>
+                    <p>phone</p>
+                    <h6>Email:</h6>
+                    <p>paul.rosero23@gmail.com</p>
+                    <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
                 </Cell>
                 <Cell col={8} className="resume-right-col">Right Side</Cell>
             </Grid>
