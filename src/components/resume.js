@@ -47,6 +47,7 @@ class Resume extends Component {
                         institutionName={"James"}
                         institutionDescription={"description"}
                     />
+                    <h5>Skills</h5>
                     
                 </Cell>
             </Grid>
