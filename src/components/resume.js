@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
+import ResumeDetails from '../resumeComponents/resumeDetails';
 
 
 class Resume extends Component {
@@ -25,7 +26,20 @@ class Resume extends Component {
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
                 </Cell>
                 <Cell col={8} className="resume-right-col">
-                    
+                    <h5>Education</h5>
+                    <ResumeDetails
+                        startDate={"10/2001"}
+                        endDate={"10/2004"}
+                        institutionName={"James"}
+                        institutionDescription={"description"}
+                    />
+                    <h5>Work</h5>
+                    <ResumeDetails
+                        startDate={"10/2005"}
+                        endDate={"10/2020"}
+                        institutionName={"James"}
+                        institutionDescription={"description"}
+                    />
                 </Cell>
             </Grid>
             </div>
