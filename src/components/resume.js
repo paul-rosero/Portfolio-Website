@@ -23,9 +23,13 @@ class Resume extends Component {
                     <p className="side-bar-p">(631)637-5976</p>
                     <h6>Email:</h6>
                     <p className="side-bar-p">
-                        <a id="email" href={"mailto: paul.rosero23@gmail.com"}>paul.rosero23@gmail.com</a>
+                        <a id="email" href={"mailto: paul.rosero23@gmail.com"} style={{ fontWeight: 'bold'}}>paul.rosero23@gmail.com</a>
                     </p>
-                    
+                    <h6>Webpages:</h6>
+                    <p>
+                        <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1em', fontWeight: 'bold'}}>My GitHub</a>
+                        <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My LinkedIn</a>
+                    </p>
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
                 </Cell>
                 <Cell col={8} className="resume-right-col">
@@ -36,13 +40,14 @@ class Resume extends Component {
                         institutionName={"James"}
                         institutionDescription={"description"}
                     />
-                    <h5>Work</h5>
+                    <h5>Work Experience</h5>
                     <ResumeDetails
                         startDate={"10/2005"}
                         endDate={"10/2020"}
                         institutionName={"James"}
                         institutionDescription={"description"}
                     />
+                    
                 </Cell>
             </Grid>
             </div>
