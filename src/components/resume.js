@@ -22,7 +22,9 @@ class Resume extends Component {
                     <h6>Phone:</h6>
                     <p className="side-bar-p">(631)637-5976</p>
                     <h6>Email:</h6>
-                    <p className="side-bar-p">paul.rosero23@gmail.com</p>
+                    <p className="side-bar-p">
+                        <a id="email" href={"mailto: paul.rosero23@gmail.com"}>paul.rosero23@gmail.com</a>
+                    </p>
                     
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
                 </Cell>
