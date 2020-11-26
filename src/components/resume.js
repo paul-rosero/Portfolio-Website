@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
 import ResumeDetails from './resumeComponents/resumeDetails';
+import Skills from './resumeComponents/skills';
 
 
 class Resume extends Component {
@@ -48,7 +49,9 @@ class Resume extends Component {
                         institutionDescription={"description"}
                     />
                     <h5>Skills</h5>
-                    
+                    <Skills 
+                        
+                    />
                 </Cell>
             </Grid>
             </div>
