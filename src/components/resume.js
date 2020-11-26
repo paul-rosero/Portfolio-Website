@@ -50,7 +50,8 @@ class Resume extends Component {
                     />
                     <h5>Skills</h5>
                     <Skills 
-                        
+                        skill="JavaScript"
+                        progress={60}
                     />
                 </Cell>
             </Grid>
