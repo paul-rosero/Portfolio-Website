@@ -67,6 +67,10 @@ class Resume extends Component {
                         skill="Node.Js"
                         progress={60}   
                     />
+                    <Skills
+                        skill="Ruby on Rails"
+                        progress={50}
+                    />
                     <h6>Databases</h6>
                     <Skills
                         skill="MongoDB"
