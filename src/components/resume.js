@@ -49,8 +49,24 @@ class Resume extends Component {
                         institutionDescription={"description"}
                     />
                     <h5>Skills</h5>
-                    <Skills 
+                    <Skills
                         skill="JavaScript"
+                        progress={60}
+                    />
+                    <Skills
+                        skill="Ruby"
+                        progress={40}
+                    />
+                    <Skills
+                        skill="React"
+                        progress={60}
+                    />
+                    <Skills
+                        skill="MongoDB"
+                        progress={50}
+                    />
+                    <Skills
+                        skill="NodeJs"
                         progress={60}
                     />
                 </Cell>
