@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Cell, Grid, ProgressBar } from 'react-mdl'
+import React, { Component } from 'react';
+import { Cell, Grid, ProgressBar } from 'react-mdl';
 
 const skillsObject = [
     {skillType: "language", skillName: "JavaScript", skillProgress: 75,},
@@ -22,7 +22,7 @@ const renderLanguage = skillsObject.map((skill, index) => {
             <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
         </div>
     }
-    return null
+    return null;
 })
     
 const renderFramework = skillsObject.map((skill, index) => {
@@ -32,7 +32,7 @@ const renderFramework = skillsObject.map((skill, index) => {
             <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
         </div>
     }
-    return null
+    return null;
 })
 
 const renderDatabase = skillsObject.map((skill, index) => {
@@ -42,7 +42,7 @@ const renderDatabase = skillsObject.map((skill, index) => {
             <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
         </div>
     }
-    return null
+    return null;
 })
 
 const renderOther = skillsObject.map((skill, index) => {
@@ -52,7 +52,7 @@ const renderOther = skillsObject.map((skill, index) => {
             <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
         </div>
     }
-    return null
+    return null;
 })
 
 class Skills extends Component {
