@@ -35,6 +35,15 @@ const renderFramework = skillsObject.map((skill, index) => {
     return null
 })
 
+const renderDatabase = skillsObject.map((skill, index) => {
+    if (skill.skillType === "database") {
+        return <div key={index} style={{display: 'flex'}}>
+            {skill.skillName}
+            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
+        </div>
+    }
+    return null
+})
 class Skills extends Component {
     render() {
         return (
