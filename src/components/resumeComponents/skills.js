@@ -41,9 +41,9 @@ class Skills extends Component {
             <Grid>
                 <Cell col={12}>
                 <h6>Languages:</h6>
-                {renderLanguage}
+                    { renderLanguage }
                 <h6>Frameworks:</h6>
-                    
+                    { renderFramework }
                 <h6>Databases:</h6>
                     
                 <h6>Other:</h6>   
