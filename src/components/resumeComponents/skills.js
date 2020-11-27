@@ -33,7 +33,11 @@ class Skills extends Component {
                 <Cell col={12}>
                 <h6>Languages:</h6>
                 {renderLanguage}
+                <h6>Frameworks:</h6>
                     
+                <h6>Databases:</h6>
+                    
+                <h6>Other:</h6>   
                 </Cell>
             </Grid>
         )
