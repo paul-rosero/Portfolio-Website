@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
-import ResumeDetails from './resumeComponents/resumeDetails';
+import Education from './resumeComponents/education';
+import WorkExperience from './resumeComponents/workExperience';
 import Skills from './resumeComponents/skills';
+
 
 
 class Resume extends Component {
@@ -33,70 +35,36 @@ class Resume extends Component {
                     </p>
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
                 </Cell>
+
                 <Cell col={8} className="resume-right-col">
                     <h5>Education</h5>
-                    <ResumeDetails
+                    < Education 
                         startDate={"10/2001"}
                         endDate={"10/2004"}
-                        institutionName={"James"}
-                        institutionDescription={"description"}
+                        schoolName={"James1"}
+                        schoolDescription={"description"}
                     />
                     <h5>Work Experience</h5>
-                    <ResumeDetails
-                        startDate={"10/2005"}
-                        endDate={"10/2020"}
-                        institutionName={"James"}
-                        institutionDescription={"description"}
+                    < WorkExperience
+                        startDate={"08/2016"}
+                        endDate={"Present"}
+                        jobTitle={"Licensed Massage Therapist"}
+                        jobName={"James"}
+                        jobDescription1={"description1"}
+                        jobDescription2={"description2"}
+                        jobDescription3={"description3"}
+                        jobDescription4={"description4"}
                     />
+                    < Skills />
                     <h5>Skills</h5>
                     <h6>Languages:</h6>
-                    <Skills
-                        skill="JavaScript"
-                        progress={60}
-                    />
-                    <Skills
-                        skill="Ruby"
-                        progress={40}
-                    />
+                    
                     <h6>Frameworks:</h6>
-                    <Skills
-                        skill="React.Js"
-                        progress={60}
-                    />
-                    <Skills
-                        skill="Node.Js"
-                        progress={60}   
-                    />
-                    <Skills
-                        skill="Ruby on Rails"
-                        progress={50}
-                    />
+                    
                     <h6>Databases</h6>
-                    <Skills
-                        skill="MongoDB"
-                        progress={50}
-                    />
-                    <Skills
-                        skill="PostgressSQL"
-                        progress={50}
-                    />
+                    
                     <h6>Other:</h6>
-                    <Skills
-                        skill="HTML5/CSS"
-                        progress={60}
-                    />
-                    <Skills
-                        skill="Bootstrap"
-                        progress={55}
-                    />
-                    <Skills
-                        skill="Spanish"
-                        progress={100}
-                    />
-                    <Skills
-                        skill="Italian"
-                        progress={75}
-                    />
+                    
                 </Cell>
             </Grid>
             </div>
