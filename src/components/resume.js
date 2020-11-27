@@ -4,12 +4,9 @@ import Education from './resumeComponents/education';
 import WorkExperience from './resumeComponents/workExperience';
 import Skills from './resumeComponents/skills';
 
-
-
 class Resume extends Component {
     render() {
         return(
-            <div>
             <Grid className="resume-grid">
                 <Cell col={4} className="resume-left-col">
                     <div style={{ textAlign: 'center'}}>
@@ -38,30 +35,13 @@ class Resume extends Component {
 
                 <Cell col={8} className="resume-right-col">
                     <h5>Education</h5>
-                    < Education 
-                        startDate={"10/2001"}
-                        endDate={"10/2004"}
-                        schoolName={"James1"}
-                        schoolDescription={"description"}
-                    />
+                    <Education/>
                     <h5>Work Experience</h5>
-                    < WorkExperience
-                        startDate={"08/2016"}
-                        endDate={"Present"}
-                        jobTitle={"Licensed Massage Therapist"}
-                        jobName={"James"}
-                        jobDescription1={"description1"}
-                        jobDescription2={"description2"}
-                        jobDescription3={"description3"}
-                        jobDescription4={"description4"}
-                    />
-                    
+                    <WorkExperience/>
                     <h5>Skills</h5>
-                    < Skills />
-                                        
+                    <Skills />     
                 </Cell>
             </Grid>
-            </div>
         )
     }
 }
