@@ -63,10 +63,21 @@
     padding-left: 2em;
 }
 .side-bar-p {
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
-.resume-grid h6 {
+.resume-left-col h6 {
     margin-bottom: 0px;
-    margin-top: .5px;
+    margin-top: 0.5px;
+}
+.language-h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h6 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#education-grid, #workExperience-grid, #skills-grid {
+    padding: 0px;
 }
 /* Styling for the Projects Page */
