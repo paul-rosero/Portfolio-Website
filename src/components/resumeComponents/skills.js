@@ -54,7 +54,7 @@ class Skills extends Component {
                 <h6>Frameworks:</h6>
                     { renderFramework }
                 <h6>Databases:</h6>
-                    
+                    { renderDatabase }
                 <h6>Other:</h6>   
                 </Cell>
             </Grid>
