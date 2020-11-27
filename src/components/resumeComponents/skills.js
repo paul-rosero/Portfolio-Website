@@ -16,14 +16,14 @@ const skillsObject = [
 ]
 
 const renderLanguage = skillsObject.map((skill, index) => {
-        if (skill.skillType === "language") {
-            return <div key={index} style={{display: 'flex'}}>
-                {skill.skillName}
-                <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
-            </div>
-        }
-        return null
-    })
+    if (skill.skillType === "language") {
+        return <div key={index} style={{display: 'flex'}}>
+            {skill.skillName}
+            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
+        </div>
+    }
+    return null
+})
     
 
 class Skills extends Component {
