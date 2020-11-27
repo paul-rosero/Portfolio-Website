@@ -58,7 +58,7 @@ const renderOther = skillsObject.map((skill, index) => {
 class Skills extends Component {
     render() {
         return (
-            <Grid>
+            <Grid id="skills-grid">
                 <Cell col={12}>
                     <h6 className="language-h6">Languages:</h6>
                         { renderLanguage }

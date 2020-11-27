@@ -4,7 +4,7 @@ import { Cell, Grid } from 'react-mdl';
 class Education extends Component {
     render() {
         return (
-            <Grid>
+            <Grid id="education-grid">
                 <Cell col={4}>
                     <p>{this.props.startDate} - {this.props.endDate}</p>
                 </Cell>

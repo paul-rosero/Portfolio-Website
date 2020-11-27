@@ -4,7 +4,7 @@ import { Cell, Grid } from 'react-mdl';
 class WorkExperience extends Component {
     render() {
         return (
-            <Grid>
+            <Grid id="workExperience-grid">
                 <Cell col={4}>
                     <p>{this.props.startDate} - {this.props.endDate}</p>
                 </Cell>
