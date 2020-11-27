@@ -57,14 +57,8 @@ class Resume extends Component {
                     />
                     
                     <h5>Skills</h5>
-                    
                     < Skills />
-                    <h6>Frameworks:</h6>
-                    
-                    <h6>Databases</h6>
-                    
-                    <h6>Other:</h6>
-                    
+                                        
                 </Cell>
             </Grid>
             </div>
