@@ -55,10 +55,10 @@ class Resume extends Component {
                         jobDescription3={"description3"}
                         jobDescription4={"description4"}
                     />
-                    < Skills />
-                    <h5>Skills</h5>
-                    <h6>Languages:</h6>
                     
+                    <h5>Skills</h5>
+                    
+                    < Skills />
                     <h6>Frameworks:</h6>
                     
                     <h6>Databases</h6>
