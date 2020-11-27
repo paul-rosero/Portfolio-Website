@@ -60,13 +60,14 @@ class Skills extends Component {
         return (
             <Grid>
                 <Cell col={12}>
-                <h6>Languages:</h6>
-                    { renderLanguage }
-                <h6>Frameworks:</h6>
-                    { renderFramework }
-                <h6>Databases:</h6>
-                    { renderDatabase }
-                <h6>Other:</h6>   
+                    <h6>Languages:</h6>
+                        { renderLanguage }
+                    <h6>Frameworks:</h6>
+                        { renderFramework }
+                    <h6>Databases:</h6>
+                        { renderDatabase }
+                    <h6>Other:</h6>
+                        { renderOther }
                 </Cell>
             </Grid>
         )
