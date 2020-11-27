@@ -61,6 +61,7 @@
     background: #27221f;
     color: white;
     padding-left: 2em;
+    padding-top: 1em;
 }
 .side-bar-p {
     margin-bottom: 10px;
@@ -72,6 +73,10 @@
 .language-h6 {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+.resume-right-col h5 {
+    margin-bottom: 8px;
+    margin-top: 12px;
 }
 h6 {
     margin-top: 5px;
