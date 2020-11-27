@@ -1,19 +1,43 @@
 import React, { Component } from 'react'
 import { Cell, Grid, ProgressBar } from 'react-mdl'
 
-export class Skills extends Component {
+const skillsObject = [
+    {skillType: "language", skillName: "JavaScript", skillProgress: 75,},
+    {skillType: "language", skillName: "Ruby", skillProgress: 50,},
+    {skillType: "framework", skillName: "React.Js", skillProgress: 60,},
+    {skillType: "framework", skillName: "Node.Js", skillProgress: 50,},
+    {skillType: "framework", skillName: "Ruby on Rails", skillProgress: 50,},
+    {skillType: "database", skillName: "MongoDb", skillProgress: 60,},
+    {skillType: "database", skillName: "PostgresSQL", skillProgress: 50,},
+    {skillType: "other", skillName: "HTML5/CSS", skillProgress: 70,},
+    {skillType: "other", skillName: "Bootstrap", skillProgress: 55,},
+    {skillType: "other", skillName: "Spanish", skillProgress: 100,},
+    {skillType: "other", skillName: "Italian", skillProgress: 75,}
+]
+
+const renderLanguage = skillsObject.map((skill, index) => {
+        if (skill.skillType === "language") {
+            return <div key={index} style={{display: 'flex'}}>
+                {skill.skillName}
+                <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
+            </div>
+        }
+        return null
+    })
+    
+
+class Skills extends Component {
     render() {
         return (
             <Grid>
                 <Cell col={12}>
-                    <div style={{display: 'flex'}}>
-                        {this.props.skill}
-                        <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={this.props.progress} />
-                    </div>
+                <h6>Languages:</h6>
+                {renderLanguage}
+                    
                 </Cell>
             </Grid>
         )
     }
 }
 
-export default Skills
+export default Skills;
