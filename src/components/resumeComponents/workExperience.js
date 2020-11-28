@@ -18,8 +18,8 @@ const renderWork = workArray.map((job, index) => {
             <p>{job.startDate} - {job.endDate}</p>
         </Cell>
         <Cell col={8} >
-            <h4 style={{marginTop: '0px', marginBottom: '0.3px'}}>{job.companyName}</h4>
-            <h5 style={{marginTop: '0px', marginBottom: '0.3px'}}>{job.jobPosition}</h5>
+            <h5 style={{marginTop: '0px', marginBottom: '0.3px'}}>{job.companyName}</h5>
+            <h6 style={{marginTop: '0px', marginBottom: '0.3px'}}>{job.jobPosition}</h6>
             <ul>
                 <li>{ job.jobDescription1}</li>
                 <li>{ job.jobDescription2}</li>
