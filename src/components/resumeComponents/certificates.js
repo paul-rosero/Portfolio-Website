@@ -13,7 +13,7 @@ const renderCertificate = certificateArray.map((certificate, index) => {
             <p>{ certificate.date }</p>
         </Cell>
         <Cell col={ 8 }>
-        <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ certificate.name }</h6>
+            <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ certificate.name }</h6>
             <p>{ certificate.school }</p>
         </Cell>
     </Grid>
@@ -21,7 +21,7 @@ const renderCertificate = certificateArray.map((certificate, index) => {
 class Certificates extends Component {
     render() {
         return (
-            <></>
+            [ renderCertificate ]
         )
     }
 }
