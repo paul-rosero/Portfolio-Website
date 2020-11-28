@@ -4,9 +4,9 @@ import { Cell, Grid } from 'react-mdl';
 const educationArray = [
     { startDate: "11/14/2018", endDate: "05/27/2020", name: "Flatiron School", degree: "Certificate of Completion Self-Paced Online Software Engineer" },
 
-    { startDate: "01/2012", endDate: "12/2013", name: "New York College of Health Professions", degree: "Associates in Occupational Studies" },
-    
-    { startDate: "09/2002", endDate: "6/2006", name: "Stony Brook University", degree: "Bachelors in Biology" }
+    { startDate: "01/2012", endDate: "12/2013", name: "New York College of Health Professions", degree: "Associates Degree in Occupational Studies" },
+
+    { startDate: "09/2002", endDate: "6/2006", name: "Stony Brook University", degree: "Bachelors Degree in Biology" }
 ]
 
 const renderEducation = educationArray.map((school, index) => {
