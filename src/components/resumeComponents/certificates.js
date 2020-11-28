@@ -7,10 +7,14 @@ const certificateArray = [
     {date: "08/26/2020", name: "Software Engineering Virtual Experience 2020", school: "JP Morgan Chase & CO."},
 ]
 
-const renderCertificate = certificateArray.map(certificate => {
-    return <Grid>
-        <Cell>
-
+const renderCertificate = certificateArray.map((certificate, index) => {
+    return <Grid className="certificate-grid" key={ index }>
+        <Cell col={ 4 }>
+            <p>{ certificate.date }</p>
+        </Cell>
+        <Cell col={ 8 }>
+        <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ certificate.name }</h6>
+            <p>{ certificate.school }</p>
         </Cell>
     </Grid>
 })
