@@ -9,7 +9,7 @@ class App extends Component  {
         return (  
             <div className="main-portfolio-page">
                 <Layout fixedTabs>
-                    <Header title="My Portfolio Page" style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover', color: 'white'}}>
+                    <Header title={<Link style={{color: "white", textDecoration: 'none'}} to="/">My Portfolio Page</Link>} style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover', color: 'white'}}>
                         <Navigation>
                             <Link className="link-name" to="/">Homepage</Link>
                             <Link className="link-name" to="/about">About</Link>
@@ -17,7 +17,7 @@ class App extends Component  {
                             <Link className="link-name" to="/projects">Projects</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title="Title">
+                    <Drawer title={<Link style={{color: "grey", textDecoration: 'none'}} to="/">My Portfolio Page</Link>}>
                         <Navigation >
                             <Link to="/">Homepage</Link>
                             <Link to="/about">About</Link>
