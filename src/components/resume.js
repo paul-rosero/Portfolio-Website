@@ -31,15 +31,17 @@ class Resume extends Component {
                         <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My LinkedIn</a>
                     </p>
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
+                    <h5>Skills</h5>
+                    <Skills />  
                 </Cell>
 
                 <Cell col={8} className="resume-right-col">
-                    <h5>Education</h5>
-                    <Education/>
                     <h5>Work Experience</h5>
                     <WorkExperience/>
-                    <h5>Skills</h5>
-                    <Skills />     
+                    <h5>Education</h5>
+                    <Education/>
+                    <h5>Certificates</h5>
+                    
                 </Cell>
             </Grid>
         )
