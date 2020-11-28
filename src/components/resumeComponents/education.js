@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
 
+const educationArray = [
+    {startDate: "", endDate: "", schoolName: "", description: ""},
+    {startDate: "", endDate: "", schoolName: "", description: ""},
+    {startDate: "", endDate: "", schoolName: "", description: ""}
+]
+
+const renderEducation = educationArray.map(school => {
+    console.log(school)
+})
+
 class Education extends Component {
     render() {
         return (
