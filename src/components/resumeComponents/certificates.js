@@ -8,7 +8,7 @@ const certificateArray = [
 ]
 
 const renderCertificate = certificateArray.map((certificate, index) => {
-    return <Grid className="certificate-grid" key={ index }>
+    return <Grid id="certificate-grid" key={ index }>
         <Cell col={ 4 }>
             <p>{ certificate.date }</p>
         </Cell>
