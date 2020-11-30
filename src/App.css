@@ -86,6 +86,9 @@ h6 {
 #education-grid {
     padding: 0px;
 }
+#education-grid p {
+    margin: 0px;
+}
 /* Styling for WorkExperience Component*/
 #workExperience-grid ul {
     margin: 0px;
@@ -100,5 +103,8 @@ h6 {
 /* Styling for Certificates Component*/
 #certificate-grid {
     padding: 0px;
+}
+#certificate-grid p {
+    margin: 0px;
 }
 /* Styling for the Projects Page */
