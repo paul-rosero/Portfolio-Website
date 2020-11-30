@@ -3,6 +3,7 @@ import { Cell, Grid } from 'react-mdl';
 import Education from './resumeComponents/education';
 import WorkExperience from './resumeComponents/workExperience';
 import Skills from './resumeComponents/skills';
+import Certificates from './resumeComponents/certificates';
 
 class Resume extends Component {
     render() {
@@ -41,7 +42,7 @@ class Resume extends Component {
                     <h5>Education</h5>
                     <Education/>
                     <h5>Certificates</h5>
-                    
+                    <Certificates/>
                 </Cell>
             </Grid>
         )
