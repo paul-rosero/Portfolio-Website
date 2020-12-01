@@ -13,17 +13,19 @@ function ContactMe() {
             </Cell>
             <Cell col={ 6 }>
                 <h3>Contact Me</h3>
-                <hr style={{ borderTop: "5px dotted white", width: "75%", margin: "auto" }}/>
+                <hr style={{ borderTop: "5px dotted white", width: "85%", margin: "auto" }}/>
                 <div className="icon-list">
                     <List>
                         <ListItem>
                             <ListItemContent id="icon">
-                                <i class="fas fa-mobile-alt"></i>
+                                <i class="fas fa-mobile-alt"/>
+                                (631)637-5976
                             </ListItemContent>
                         </ListItem>
                         <ListItem>
                             <ListItemContent id="icon">
-                                <i class="fas fa-envelope-square"></i>
+                                <i class="fas fa-envelope-square"/>
+                                paul.rosero23@gmail.com
                             </ListItemContent>
                         </ListItem>
                         <ListItem>
