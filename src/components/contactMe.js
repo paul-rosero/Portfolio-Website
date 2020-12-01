@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cell, Grid } from 'react-mdl';
+import { Cell, Grid, List, ListItem, ListItemContent } from 'react-mdl';
 
 function ContactMe() {
     return (
@@ -12,7 +12,12 @@ function ContactMe() {
                 </p>
             </Cell>
             <Cell col={ 6 }>
-            <h1>other side</h1>
+                <h3>Contact Me</h3>
+                <List>
+                    <ListItem>
+                        <ListItemContent></ListItemContent>
+                    </ListItem>
+                </List>
             </Cell>
         </Grid>
     )
