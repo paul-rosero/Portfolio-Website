@@ -14,17 +14,25 @@ function ContactMe() {
             <Cell col={ 6 }>
                 <h3>Contact Me</h3>
                 <hr style={{ borderTop: "5px dotted white", width: "75%", margin: "auto" }}/>
-                <List>
-                    <ListItem>
-                        <ListItemContent></ListItemContent>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemContent></ListItemContent>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemContent></ListItemContent>
-                    </ListItem>
-                </List>
+                <div className="icon-list">
+                    <List>
+                        <ListItem>
+                            <ListItemContent id="icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </ListItemContent>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemContent id="icon">
+                                <i class="fas fa-envelope-square"></i>
+                            </ListItemContent>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemContent id="icon">
+
+                            </ListItemContent>
+                        </ListItem>
+                    </List>
+                </div>
             </Cell>
         </Grid>
     )
