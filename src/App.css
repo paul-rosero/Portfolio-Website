@@ -43,6 +43,7 @@
     font-size: 3em;
     padding: 8px;
 }
+
 /* Styling for the About Me Page */
 .paragraph {
     padding-left: 6rem;
@@ -56,6 +57,7 @@
     margin-top: 2rem;
     font-weight: bold;
 }
+
 /* Styling for the Resume Page */
 .resume-right-col {
     background: #27221f;
@@ -82,6 +84,7 @@ h6 {
     margin-top: 8px;
     margin-bottom: 0px;
 }
+
 /*Styling for Education Component*/
 #education-grid {
     padding: 0px;
@@ -89,6 +92,7 @@ h6 {
 #education-grid p {
     margin: 0px;
 }
+
 /* Styling for WorkExperience Component*/
 #workExperience-grid ul {
     margin: 0px;
@@ -100,11 +104,23 @@ h6 {
 #skills-grid {
     padding: 0px;
 }
+
 /* Styling for Certificates Component*/
 #certificate-grid {
     padding: 0px;
 }
 #certificate-grid p {
     margin: 0px;
+}
+/* Styling for the Contact Me Page */
+#contactMe-grid {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    background: white;
+    color: black;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 /* Styling for the Projects Page */
