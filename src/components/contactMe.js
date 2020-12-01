@@ -17,6 +17,12 @@ function ContactMe() {
                     <ListItem>
                         <ListItemContent></ListItemContent>
                     </ListItem>
+                    <ListItem>
+                        <ListItemContent></ListItemContent>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemContent></ListItemContent>
+                    </ListItem>
                 </List>
             </Cell>
         </Grid>
