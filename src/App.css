@@ -117,12 +117,12 @@ h6 {
 #contactMe-grid {
     text-align: center;
     justify-content: center;
-    width: 80%;
-    height: 550px;
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, .8);
     border-radius: 10px;
     color: white;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin: 3em;
+    
 }
 /* Styling for the Projects Page */
