@@ -18,19 +18,20 @@ function ContactMe() {
                     <List>
                         <ListItem>
                             <ListItemContent id="icon">
-                                <i class="fas fa-mobile-alt"/>
-                                (631)637-5976
+                                <i class="fab fa-twitter-square"/>
+                                <a href={"https://twitter.com/paulrosero33"} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My Twitter</a>
                             </ListItemContent>
                         </ListItem>
                         <ListItem>
                             <ListItemContent id="icon">
                                 <i class="fas fa-envelope-square"/>
-                                paul.rosero23@gmail.com
+                                <a href={"mailto: paul.rosero23@gmail.com"} style={{ fontWeight: 'bold'}}>My Email</a>
                             </ListItemContent>
                         </ListItem>
                         <ListItem>
                             <ListItemContent id="icon">
-
+                                <i class="fab fa-facebook-square"/>
+                                <a href="https://www.facebook.com/paul.rosero.98" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My Facebook</a>
                             </ListItemContent>
                         </ListItem>
                     </List>
