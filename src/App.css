@@ -4,7 +4,8 @@
 }
 .avatar-img {
     height: 250px;
-    padding-top: 5em;
+    margin-top: 5em;
+    border-radius: 20px;
 }
 .link-name {
     font-size: 1.1rem;
@@ -118,8 +119,9 @@ h6 {
     justify-content: center;
     width: 80%;
     height: 550px;
-    background: white;
-    color: black;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    color: white;
     margin-bottom: 2em;
     margin-top: 2em;
 }
