@@ -1,3 +1,4 @@
+
 /* Styling for the Homepage */
 .homepage-grid  {
     text-align: center;
@@ -132,5 +133,9 @@ h6 {
     font-size: 20px;
     color: white;
     font-weight: bold;
+}
+#icon a {
+    color: white;
+    text-decoration: none;
 }
 /* Styling for the Projects Page */
