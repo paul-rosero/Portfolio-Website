@@ -3,7 +3,7 @@ import { Cell, Grid } from 'react-mdl';
 
 function ContactMe() {
     return (
-        <Grid>
+        <Grid id="contactMe-grid">
             <Cell>
 
             </Cell>
