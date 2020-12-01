@@ -27,19 +27,8 @@ class App extends Component  {
                             <Link to="/contact">Contact Me</Link>
                         </Navigation>
                     </Drawer>
-                    <Content 
-                        style={{
-                            background: '#9CECFB',  /* fallback for old browsers */
-                            background: '-webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB)',  /* Chrome 10-25, Safari 5.1-6 */
-                            background: 'linear-gradient(to top, #0052D4, #65C7F7, #9CECFB)', /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                            top: '0',
-                            left: '0',
-                            width: '100%',
-                            height: '100%'
-                        }}>
-                        
+                    <Content style={{ background: '#9CECFB'/* fallback for old browsers */, background: '-webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB)'/* Chrome 10-25, Safari 5.1-6 */, background: 'linear-gradient(to top, #0052D4, #65C7F7, #9CECFB)'/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */, top: '0', left: '0', width: '100%', height: '100%' }}>
                         <Main/>
-                       
                     </Content>
                 </Layout>
             </div>
