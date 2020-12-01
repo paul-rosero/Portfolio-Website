@@ -15,9 +15,9 @@ function Homepage() {
                         <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
                         <div className="social-links">
                             {/*Github icon */}
-                            <a href="https://github.com/paul-rosero" target="_blank" rel="noreferrer"><i class="fa fa-github-square"/></a>
+                            <a href="https://github.com/paul-rosero" target="_blank" rel="noreferrer"><i class="fab fa-github-square"/></a>
                             {/*LinkedIn icon */}
-                            <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noreferrer"><i class="fa fa-linkedin"/></a>
+                            <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"/></a>
                         </div>
                     </div>
                 </Cell>
