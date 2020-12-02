@@ -1,4 +1,5 @@
 import React from 'react';
+import { Cell, Grid } from 'react-mdl';
 
 function toggleTabs(activeTab) {
     return activeTab
@@ -6,10 +7,13 @@ function toggleTabs(activeTab) {
 
 export default function Project(props) {
     return (
-        <div>
-            <h2>project</h2>
-            { toggleTabs(props.activeTab) }
-        </div>
+        <Grid className="content-grid">
+            <Cell col={ 12 }>
+                <h2>Project</h2>
+                { toggleTabs(props.activeTab) }
+            </Cell>
+            
+        </Grid>
     )
 }
 
