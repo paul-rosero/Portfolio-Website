@@ -9,7 +9,6 @@ export default function Project(props) {
     return (
         <Grid className="content-grid">
             <Cell col={ 12 }>
-                <h2>Project</h2>
                 { toggleTabs(props.activeTab) }
             </Cell>
             
