@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-export default function Project() {
+function toggleTabs(activeTab) {
+    return activeTab
+}
+
+export default function Project(props) {
     return (
         <div>
             <h2>project</h2>
+            { toggleTabs(props.activeTab) }
         </div>
     )
 }
