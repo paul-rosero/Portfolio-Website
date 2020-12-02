@@ -2,7 +2,13 @@ import React from 'react';
 import { Cell, Grid } from 'react-mdl';
 
 function toggleTabs(activeTab) {
-    return activeTab
+    if (activeTab === 0) {
+        return activeTab
+    } else if (activeTab === 1) {
+        return activeTab
+    } else if (activeTab === 2) {
+        return activeTab
+    }
 }
 
 export default function Project(props) {
@@ -11,7 +17,6 @@ export default function Project(props) {
             <Cell col={ 12 }>
                 { toggleTabs(props.activeTab) }
             </Cell>
-            
         </Grid>
     )
 }
