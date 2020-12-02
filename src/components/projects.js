@@ -16,10 +16,7 @@ class Projects extends Component {
                     <Tab>Targaryens</Tab>
                 </Tabs>
                 <section className="tab-content">
-                    
-                        Content for the tab: { this.state.activeTab }
-                        <Project activeTab={ this.state.activeTab } />
-                    
+                    <Project activeTab={ this.state.activeTab } />
                 </section>
             </div>    
         );
