@@ -10,15 +10,15 @@ class Projects extends Component {
     render() {
         return (
             <div className="projects-category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                <Tabs activeTab={ this.state.activeTab } onChange={ (tabId) => this.setState({ activeTab: tabId }) } ripple>
                     <Tab>Starks</Tab>
                     <Tab>Lannisters</Tab>
                     <Tab>Targaryens</Tab>
                 </Tabs>
                 <section>
                     <div className="content">
-                        Content for the tab: {this.state.activeTab}
-                        
+                        Content for the tab: { this.state.activeTab }
+                        <Project activeTab={ this.state.activeTab } />
                     </div>
                 </section>
             </div>    
