@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Tabs, Tab } from 'react-mdl';
 class Projects extends Component {
     render() {
         return(
