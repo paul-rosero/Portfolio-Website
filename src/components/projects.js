@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 import Project from './projectsComponents/project';
 class Projects extends Component {
     constructor(props) {
@@ -16,7 +16,11 @@ class Projects extends Component {
                     <Tab>Targaryens</Tab>
                 </Tabs>
                 <section className="tab-content">
-                    <Project activeTab={ this.state.activeTab } />
+                    <Grid className="content-grid">
+                        <Cell col={ 12 }>
+                            <Project activeTab={ this.state.activeTab } />
+                        </Cell>
+                    </Grid>
                 </section>
             </div>    
         );
