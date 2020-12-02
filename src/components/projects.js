@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-mdl';
+import Project from './projectsComponents/project';
 class Projects extends Component {
     constructor(props) {
         super(props)
@@ -17,6 +18,7 @@ class Projects extends Component {
                 <section>
                     <div className="content">
                         Content for the tab: {this.state.activeTab}
+                        
                     </div>
                 </section>
             </div>    
