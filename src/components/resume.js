@@ -38,10 +38,11 @@ class Resume extends Component {
 
                 <Cell col={8} className="resume-right-col">
                     <h5>Certificates</h5>
-                    <Certificates/><h5>Work Experience</h5>
-                    <WorkExperience/>
+                    <Certificates/>
                     <h5>Education</h5>
                     <Education/>
+                    <h5>Work Experience</h5>
+                    <WorkExperience/>
                 </Cell>
             </Grid>
         )
