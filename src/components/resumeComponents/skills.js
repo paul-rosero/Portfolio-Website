@@ -11,6 +11,7 @@ const skillsObject = [
     {skillType: "database", skillName: "MongoDb", skillProgress: 60,},
     {skillType: "database", skillName: "PostgreSQL", skillProgress: 50,},
     {skillType: "other", skillName: "HTML5/CSS", skillProgress: 70,},
+    {skillType: "other", skillName: "Git/GitHub", skillProgress: 70,},
     {skillType: "other", skillName: "Bootstrap", skillProgress: 55,},
     {skillType: "other", skillName: "Spanish", skillProgress: 100,},
     {skillType: "other", skillName: "Italian", skillProgress: 75,}
