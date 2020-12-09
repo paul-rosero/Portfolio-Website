@@ -4,6 +4,7 @@ import { Cell, Grid, ProgressBar } from 'react-mdl';
 const skillsObject = [
     {skillType: "language", skillName: "JavaScript", skillProgress: 75,},
     {skillType: "language", skillName: "Ruby", skillProgress: 50,},
+    {skillType: "language", skillName: "Linux/Unix", skillProgress: 50,},
     {skillType: "framework", skillName: "React.Js", skillProgress: 60,},
     {skillType: "framework", skillName: "Node.Js", skillProgress: 50,},
     {skillType: "framework", skillName: "Ruby on Rails", skillProgress: 50,},
