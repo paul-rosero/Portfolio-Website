@@ -6,7 +6,7 @@ const educationArray = [
 
     { startDate: "01/2012", endDate: "12/2013", name: "New York College of Health Professions", degree: "Associates Degree in Occupational Studies" },
 
-    { startDate: "09/2002", endDate: "6/2006", name: "Stony Brook University", degree: "Bachelors Degree in Biology" }
+    { startDate: "09/2002", endDate: "6/2006", name: "Stony Brook University", degree: "Bachelor's Degree in Biology" }
 ]
 
 const renderEducation = educationArray.map((school, index) => {
