@@ -5,6 +5,7 @@ const certificateArray = [
     {date: "10/08/2020", name: "JavaScript Essential Training 2019", school: "LinkedIn Learning"},
     {date: "11/04/2020", name: "Learning Node.js", school: "LinkedIn Learning"},
     {date: "08/26/2020", name: "Software Engineering Virtual Experience 2020", school: "JP Morgan Chase & CO."},
+    { date: "11/14/2018 - 05/27/2020", school: "Flatiron School (Online, Self-Paced)", name: "Certificate of Completion for Software Engineer" }
 ]
 
 const renderCertificate = certificateArray.map((certificate, index) => {
