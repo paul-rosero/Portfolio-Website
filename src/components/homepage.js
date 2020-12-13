@@ -17,6 +17,14 @@ function Homepage() {
                             <i class="fab fa-js-square"></i>
                             {/*React.js icon */}
                             <i class="fab fa-react"></i>
+                            {/*Ruby icon */}
+                            <i class="fas fa-gem"></i>
+                            {/*HTML5 icon */}
+                            <i class="fab fa-html5"></i>
+                            {/*Bootstrap icon */}
+                            <i class="fab fa-bootstrap"></i>
+                            {/*MongoDB icon */}
+                            <i class="fab fa-mdb"></i>
                         </div>
                         <hr/>
                         <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
