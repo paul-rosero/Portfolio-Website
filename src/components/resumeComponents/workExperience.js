@@ -8,7 +8,7 @@ const workArray = [
 
     { startDate: "03/2009", endDate: "06/2012", companyName: "SUFFOLK WESTERN BOCES", position: "Relief Aide/Workshop Paraprofessional", description: ["Worked with a team of three senior staff to ensure the safety of students and staff while in the workshop.", "Managed 30 classes a week, all special education students, teaching them to perform a certain task to prepare them for jobs after school.", "Organized the materials and tools each student needed before the class would arrive.", "Package and label finished product to send back to company."] },
 
-    { startDate: "05/2009", endDate: "06/2011", companyName: "OHEKA Castle", position: "Waiter", description: ["Started as a waiter, learning from scratch how to interact with guests.", "Eventually was promoted to become one of 3 managers in charge of a group of employees to set up and break down the decorations for the party.", "After a year, I was promoted to oversee the private dining of the owners friends.", ""] }
+    { startDate: "05/2009", endDate: "06/2011", companyName: "OHEKA Castle", position: "Waiter", description: ["Started as a waiter, learning from scratch how to interact with guests.", "Eventually was promoted to become one of 3 managers in charge of a group of employees to set up and break down the decorations for the party.", "After a year, I was promoted to oversee the private dining of the owners friends."] }
 
 ]
 
