@@ -10,7 +10,8 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                <Tabs className="projects-tabs" activeTab={ this.state.activeTab } onChange={ (tabId) => this.setState({ activeTab: tabId }) } ripple>
+                
+                {/* <Tabs className="projects-tabs" activeTab={ this.state.activeTab } onChange={ (tabId) => this.setState({ activeTab: tabId }) } ripple>
                     <Tab>Starks</Tab>
                     <Tab>Lannisters</Tab>
                     <Tab>Targaryens</Tab>
@@ -21,7 +22,7 @@ class Projects extends Component {
                             <Project activeTab={ this.state.activeTab } />
                         </Cell>
                     </Grid>
-                </section>
+                </section> */}
             </div>    
         );
     }
