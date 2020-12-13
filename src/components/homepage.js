@@ -12,6 +12,10 @@ function Homepage() {
                         <h1 className="home-heading">Software Engineer</h1>
                         <h1 className="home-heading">Full Stack Web Developer</h1>
                         <hr/>
+                        <div className="social-links">
+                            
+                        </div>
+                        <hr/>
                         <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
                         <div className="social-links">
                             {/*Github icon */}
