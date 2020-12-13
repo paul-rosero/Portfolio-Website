@@ -10,7 +10,7 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                
+                <h1>Under Construction, come back soon to check it out.</h1>
                 {/* <Tabs className="projects-tabs" activeTab={ this.state.activeTab } onChange={ (tabId) => this.setState({ activeTab: tabId }) } ripple>
                     <Tab>Starks</Tab>
                     <Tab>Lannisters</Tab>
