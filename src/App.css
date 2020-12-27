@@ -39,12 +39,14 @@
     justify-content: space-evenly;
     width: 50%;
     margin: auto;
-}
-.social-links i {
     color: white;
     font-size: 3em;
     padding: 8px;
 }
+a {
+    color: white; 
+}
+    
 
 /* Styling for the About Me Page */
 .paragraph {
@@ -135,7 +137,7 @@ h6 {
     font-weight: bold;
 }
 #icon a {
-    color: white;
     text-decoration: none;
+    padding-left: 10px;
 }
 /* Styling for the Projects Page */
