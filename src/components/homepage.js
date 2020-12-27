@@ -28,7 +28,7 @@ function Homepage() {
                         </div>
                         <hr/>
                         <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
-                        <div className="social-links">
+                        <div className="social-links" style={{ color: "white" }}>
                             {/*Github icon */}
                             <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"/></a>
                             {/*LinkedIn icon */}
