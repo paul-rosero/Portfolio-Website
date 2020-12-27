@@ -28,8 +28,8 @@ class Resume extends Component {
                     </p>
                     <h6>Webpages:</h6>
                     <p>
-                        <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My LinkedIn</a>
-                        <a href="https://1000hires.com/candidates/paulrosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My 1000Hires Profile</a>
+                        <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My LinkedIn</a><br/>
+                        <a href="https://1000hires.com/candidates/paulrosero" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My 1000Hires Profile</a><br/>
                         <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1em', fontWeight: 'bold'}}>My GitHub</a>
                     </p>
                     <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
