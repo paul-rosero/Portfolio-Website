@@ -22,7 +22,10 @@
     background-color: black;
     opacity: .8;
     width: 85%;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
 }
 .banner-text h1 {
@@ -50,20 +53,16 @@
     padding: 8px;
 } 
 
-   
-
 /* Styling for the About Me Page */
 .paragraph {
-    padding-left: 6rem;
-    padding-right: 6rem;
     text-align: center;
     font-weight: 600;
-    ;
+    font-size: 2vmax;
 }
 .about-page h1 {
     text-align: center;
-    margin-top: 2rem;
     font-weight: bold;
+    font-size: 4vmax;
 }
 
 /* Styling for the Resume Page */
