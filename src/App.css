@@ -8,9 +8,11 @@
     margin-top: 5em;
     border-radius: 20px;
 }
-.link-name {
+#basic-navbar-nav {
     font-size: 1.1rem;
     font-weight: bold;
+    justify-content: center;
+    background: url('http://www.getmdl.io/assets/demos/transparent.jpg') center / cover
 }
 .banner-text {
     background-color: black;
@@ -33,7 +35,7 @@
     font-size: 20px;
     color: white;
     padding: 1em;
-}
+} 
 .social-links {
     display: flex;
     justify-content: space-evenly;
@@ -42,11 +44,9 @@
     color: white;
     font-size: 3em;
     padding: 8px;
-}
-a {
-    color: white; 
-}
-    
+} 
+
+   
 
 /* Styling for the About Me Page */
 .paragraph {
