@@ -14,25 +14,25 @@ function Homepage() {
                         <hr/>
                         <div className="social-links">
                             {/*JavaScript icon */}
-                            <i class="fab fa-js-square"></i>
+                            <i className="fab fa-js-square"></i>
                             {/*React.js icon */}
-                            <i class="fab fa-react"></i>
+                            <i className="fab fa-react"></i>
                             {/*Ruby icon */}
-                            <i class="fas fa-gem"></i>
+                            <i className="fas fa-gem"></i>
                             {/*HTML5 icon */}
-                            <i class="fab fa-html5"></i>
+                            <i className="fab fa-html5"></i>
                             {/*Bootstrap icon */}
-                            <i class="fab fa-bootstrap"></i>
+                            <i className="fab fa-bootstrap"></i>
                             {/*MongoDB icon */}
-                            <i class="fab fa-mdb"></i>
+                            <i className="fab fa-mdb"></i>
                         </div>
                         <hr/>
                         <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
                         <div className="social-links" style={{ color: "white" }}>
                             {/*Github icon */}
-                            <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"/></a>
+                            <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"/></a>
                             {/*LinkedIn icon */}
-                            <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"/></a>
+                            <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"/></a>
                         </div>
                     </div>
                 </Cell>
