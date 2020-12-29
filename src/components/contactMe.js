@@ -1,6 +1,21 @@
 import React from 'react';
 import { Cell, Grid, List, ListItem, ListItemContent } from 'react-mdl';
 
+const allIcons = [
+    { id: 1, iTag: "fab fa-twitter-square", a: "https://twitter.com/paulrosero33", title: "My Twitter" },
+    { id: 2, iTag: "fas fa-envelope-square", a: "mailto: paul.rosero23@gmail.com", title: "My Email" },
+    { id: 3, iTag: "fab fa-facebook-square", a: "https://www.facebook.com/paul.rosero.98", title: "My Facebook" }
+]
+
+const renderIcons = allIcons.map( ({ iTag, id, a, title }) => {
+    return <ListItem key={ id }>
+        <ListItemContent id="icon">
+            <i className={ iTag }/>
+            <a href={ a } target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>{title}</a>
+        </ListItemContent>
+    </ListItem>
+})
+                        
 function ContactMe() {
     return (
         <Grid id="contactMe-grid">
@@ -16,24 +31,7 @@ function ContactMe() {
                 <hr style={{ borderTop: "5px dotted white", width: "85%", margin: "auto" }}/>
                 <div className="icon-list">
                     <List>
-                        <ListItem>
-                            <ListItemContent id="icon">
-                                <i class="fab fa-twitter-square"/>
-                                <a href={"https://twitter.com/paulrosero33"} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My Twitter</a>
-                            </ListItemContent>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemContent id="icon">
-                                <i class="fas fa-envelope-square"/>
-                                <a href={"mailto: paul.rosero23@gmail.com"} style={{ fontWeight: 'bold'}}>My Email</a>
-                            </ListItemContent>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemContent id="icon">
-                                <i class="fab fa-facebook-square"/>
-                                <a href="https://www.facebook.com/paul.rosero.98" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold'}}>My Facebook</a>
-                            </ListItemContent>
-                        </ListItem>
+                        { renderIcons }
                     </List>
                 </div>
             </Cell>
