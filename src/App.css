@@ -1,12 +1,16 @@
-
 /* Styling for the Homepage */
 .homepage-grid  {
     text-align: center;
 }
 .avatar-img {
     height: 250px;
-    margin-top: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    
     border-radius: 20px;
+    
 }
 #basic-navbar-nav {
     font-size: 1.1rem;
