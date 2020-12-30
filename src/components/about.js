@@ -1,11 +1,11 @@
 import React from "react";
-import { Cell, Grid } from "react-mdl";
+import { Col } from "react-bootstrap";
 
 function About() {
     return(
-        <div className="about-page" style={{ width: '100%', margin: "auto"}}>
-            <Grid className="about-page-grid" style={{ top: '3em'}}>
-                <Cell col={12}>
+        <div className="about-page">
+            
+                <Col className="about-page-grid">
                     <h1>I would like to I introduce myself...</h1>
                     <div className="about-me">
                         <p className="paragraph">
@@ -24,8 +24,8 @@ function About() {
                             In Nov 2018 I enrolled into the Software Engineer Bootcamp Curriculum offered by Flatiron and learned something I never learned before but I use everyday, websites and apps. I learned basic terminology and concepts regarding Ruby, Javascript, NPM, HTML, CSS, Rby on Rails, Sinatra, React/Redux. Learned to implement the material I learned in creating simple web apps or SPA to do basic interactions. After graduation I realized that I needed to learn more in depth and the newer material since some of the things I learned we no longer used or just switched to new code.So after trying to refactor my previous final projects I decided to learn more things so I can be able to have a better user experience.
                         </p>
                     </div>
-                </Cell>
-            </Grid>        
+                </Col>
+                 
         </div>
     )
 }

@@ -1,3 +1,10 @@
+/* Styling for the App */
+.background-app {
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
 /* Styling for the Homepage */
 .homepage-grid  {
     text-align: center;
@@ -8,9 +15,7 @@
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    
     border-radius: 20px;
-    
 }
 #basic-navbar-nav {
     font-size: 1.1rem;
@@ -58,11 +63,13 @@
     text-align: center;
     font-weight: 600;
     font-size: 2vmax;
+    margin: 1vmax 3vw ;
 }
 .about-page h1 {
     text-align: center;
     font-weight: bold;
     font-size: 4vmax;
+    padding-top: 1em;
 }
 
 /* Styling for the Resume Page */
