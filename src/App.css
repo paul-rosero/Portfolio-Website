@@ -79,6 +79,10 @@
     color: white;
     padding-left: 2em;
     padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+
 }
 .side-bar-p {
     margin-bottom: 10px;
@@ -94,7 +98,7 @@
 .resume-right-col h5 {
     margin-bottom: 8px;
     margin-top: 12px;
-}
+} 
 h6 {
     margin-top: 8px;
     margin-bottom: 0px;
