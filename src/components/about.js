@@ -5,7 +5,7 @@ function About() {
     return(
         <div className="about-page">
             
-                <Col className="about-page-grid">
+                <Col className="about-page-grid"  style={{ paddingBottom: "2em" }}>
                     <h1>I would like to I introduce myself...</h1>
                     <div className="about-me">
                         <p className="paragraph">
