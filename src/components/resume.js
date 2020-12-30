@@ -33,13 +33,11 @@ class Resume extends Component {
                             <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1em', fontWeight: 'bold'}}>My GitHub</a>
                         </p>
                         <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
-                        <h5>Skills</h5>
                         <Skills />  
                      </div>
                 </Col>
                 <Col sm={8}>
                     <div className="resume-right-col" style={{ padding: "1em" }}>
-                        <h5>Certificates</h5>
                         <Certificates/>
                         <h5>Education</h5>
                         <Education/>
