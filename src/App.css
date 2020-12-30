@@ -129,12 +129,12 @@ h6 {
 }
 
 /* Styling for Certificates Component*/
-#certificate-grid {
-    padding: 0px;
+ #certificate-grid h6 {
+    margin-bottom: 0;
 }
 #certificate-grid p {
-    margin: 0px;
-}
+    margin-bottom: 1.5em;
+} 
 /* Styling for the Contact Me Page */
 #contactMe-grid {
     text-align: center;

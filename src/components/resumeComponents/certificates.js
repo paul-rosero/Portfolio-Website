@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Col, Row, Container } from 'react-bootstrap';
 
 const certificateArray = [
     {date: "10/08/2020", name: "JavaScript Essential Training 2019", school: "LinkedIn Learning"},
@@ -9,20 +9,24 @@ const certificateArray = [
 ]
 
 const renderCertificate = certificateArray.map((certificate, index) => {
-    return <Grid id="certificate-grid" key={ index }>
-        <Cell col={ 4 }>
+    return <Row id="certificate-grid" key={ index }>
+        <Col col={ 4 }>
             <p>{ certificate.date }</p>
-        </Cell>
-        <Cell col={ 8 }>
+        </Col>
+        <Col col={ 8 }>
             <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ certificate.name }</h6>
             <p>{ certificate.school }</p>
-        </Cell>
-    </Grid>
+        </Col>
+    </Row>
 })
 class Certificates extends Component {
     render() {
         return (
-            [ renderCertificate ]
+            <Container>
+                <h5>Certificates</h5>
+                {[ renderCertificate ]}
+            </Container>
+            
         )
     }
 }
