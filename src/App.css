@@ -5,6 +5,7 @@
     background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+
 /* Styling for the Homepage */
 .homepage-grid  {
     text-align: center;
@@ -82,7 +83,6 @@
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 1em;
-
 }
 .side-bar-p {
     margin-bottom: 10px;
@@ -123,10 +123,9 @@ h6 {
 #workExperience-grid {
     padding: 0px;
 }
+
 /*Styling for Skills Component*/
-#skills-grid {
-    padding: 0px;
-}
+
 
 /* Styling for Certificates Component*/
  #certificate-grid h6 {
@@ -135,6 +134,7 @@ h6 {
 #certificate-grid p {
     margin-bottom: 1.5em;
 } 
+
 /* Styling for the Contact Me Page */
 #contactMe-grid {
     text-align: center;
