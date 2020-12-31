@@ -22,10 +22,10 @@ const allSkills = [
 const mappedSkills = allSkills.map( (skill, index) =>{
     return(
         <Row itemID={ skill.skillType } key={ index } style={{ display: 'flex' }}>
-            <Col sm={ 4 } md={ 4 } lg={ 4 }>
+            <Col xs={5}>
                 { skill.skillName }
             </Col>
-            <Col sm={ 8 } md={ 8 } lg={ 8 }>
+            <Col xs={ 7 }>
                 <ProgressBar now={ skill.skillProgress } label={ `${skill.skillProgress}%` }/>
             </Col>
         </Row>

@@ -11,10 +11,10 @@ const certificateArray = [
 const renderCertificate = certificateArray.map((certificate, index) => {
     return(
         <Row id="certificate-grid" key={ index }>
-            <Col col={ 4 }>
+            <Col >
                 <p>{ certificate.date }</p>
             </Col>
-            <Col col={ 8 }>
+            <Col xs={ 7 }>
                 <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ certificate.name }</h6>
                 <p>{ certificate.school }</p>
             </Col>

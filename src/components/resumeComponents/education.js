@@ -9,10 +9,10 @@ const educationArray = [
 const renderEducation = educationArray.map( (school, index) => {
     return(
         <Row id="education-grid" key={ index }>
-            <Col col={ 4 }>
+            <Col>
                 <p>{ school.startDate } - { school.endDate }</p>
             </Col>
-            <Col col={ 8 }>
+            <Col xs={ 7 }>
                 <h6 style={{ marginTop: '0px', fontWeight: 'bold' }}>{ school.name }</h6>
                 <p>{ school.degree }</p>
             </Col>
