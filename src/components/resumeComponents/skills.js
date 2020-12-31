@@ -47,7 +47,7 @@ mappedSkills.forEach(function(skill) {
 class Skills extends Component {
     render() {
         return (
-            <Container>
+            <Container style={{ padding: 0, margin: "0px 0px 15px 0px" }}>
                 <h3>Skills</h3>
                 <h5 className="language-h5">Languages:</h5>
                     { renderLanguage } 
