@@ -4,19 +4,19 @@ import { Col, Row, ProgressBar, Container } from 'react-bootstrap';
 const renderLanguage = [], renderFramework = [], renderDatabase = [], renderOther = []
 
 const allSkills = [
-    {skillType: "language", skillName: "JavaScript", skillProgress: 75,},
-    {skillType: "language", skillName: "Ruby", skillProgress: 50,},
-    {skillType: "language", skillName: "Linux/Unix", skillProgress: 50,},
-    {skillType: "framework", skillName: "React.Js", skillProgress: 60,},
-    {skillType: "framework", skillName: "Node.Js", skillProgress: 50,},
-    {skillType: "framework", skillName: "Ruby on Rails", skillProgress: 50,},
-    {skillType: "database", skillName: "MongoDb", skillProgress: 60,},
-    {skillType: "database", skillName: "PostgreSQL", skillProgress: 50,},
-    {skillType: "other", skillName: "HTML5/CSS", skillProgress: 70,},
-    {skillType: "other", skillName: "Git/GitHub", skillProgress: 70,},
-    {skillType: "other", skillName: "Bootstrap", skillProgress: 55,},
-    {skillType: "other", skillName: "Spanish", skillProgress: 100,},
-    {skillType: "other", skillName: "Italian", skillProgress: 75,}
+    { skillType: "language", skillName: "JavaScript", skillProgress: 75 },
+    { skillType: "language", skillName: "Ruby", skillProgress: 50 },
+    { skillType: "language", skillName: "Linux/Unix", skillProgress: 50 },
+    { skillType: "framework", skillName: "React.Js", skillProgress: 60 },
+    { skillType: "framework", skillName: "Node.Js", skillProgress: 50 },
+    { skillType: "framework", skillName: "Ruby on Rails", skillProgress: 50 },
+    { skillType: "database", skillName: "MongoDb", skillProgress: 60 },
+    { skillType: "database", skillName: "PostgreSQL", skillProgress: 50 },
+    { skillType: "other", skillName: "HTML5/CSS", skillProgress: 70 },
+    { skillType: "other", skillName: "Git/GitHub", skillProgress: 70 },
+    { skillType: "other", skillName: "Bootstrap", skillProgress: 55 },
+    { skillType: "other", skillName: "Spanish", skillProgress: 100 },
+    { skillType: "other", skillName: "Italian", skillProgress: 75 }
 ]
 
 const mappedSkills = allSkills.map( (skill, index) =>{
