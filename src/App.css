@@ -109,54 +109,35 @@ h6 {
 }
 
 /*Styling for Education Component*/
-#education-grid {
-    padding: 0px;
-}
-#education-grid p {
-    margin: 0px;
-}
+
 
 /* Styling for WorkExperience Component*/
-#workExperience-grid ul {
-    margin: 0px;
-}
-#workExperience-grid {
-    padding: 0px;
-}
+
 
 /*Styling for Skills Component*/
 
 
 /* Styling for Certificates Component*/
- #certificate-grid h6 {
-    margin-bottom: 0;
-}
+ 
 #certificate-grid p {
     margin-bottom: 1.5em;
 } 
 
 /* Styling for the Contact Me Page */
 #contactMe-grid {
-    text-align: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* width: auto; */
+    /* height: auto; */
     background-color: rgba(0, 0, 0, .8);
     border-radius: 10px;
     color: white;
-    margin: 3em;
-}
-.icon-list i {
-    font-size: 40px;
-    padding-right: 10px;
 }
 #icon {
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
     font-weight: bold;
 }
 #icon a {
     text-decoration: none;
-    padding-left: 10px;
 }
 /* Styling for the Projects Page */
