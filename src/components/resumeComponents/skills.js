@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Cell, Grid, ProgressBar } from 'react-mdl';
+import { Col, Row, ProgressBar, Container } from 'react-bootstrap';
 
-const skillsObject = [
+const renderLanguage = [], renderFramework = [], renderDatabase = [], renderOther = []
+
+const allSkills = [
     {skillType: "language", skillName: "JavaScript", skillProgress: 75,},
     {skillType: "language", skillName: "Ruby", skillProgress: 50,},
     {skillType: "language", skillName: "Linux/Unix", skillProgress: 50,},
@@ -17,61 +19,45 @@ const skillsObject = [
     {skillType: "other", skillName: "Italian", skillProgress: 75,}
 ]
 
-const renderLanguage = skillsObject.map((skill, index) => {
-    if (skill.skillType === "language") {
-        return <div key={index} style={{display: 'flex'}}>
-            {skill.skillName}
-            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
-        </div>
-    }
-    return null;
-})
-    
-const renderFramework = skillsObject.map((skill, index) => {
-    if (skill.skillType === "framework") {
-        return <div key={index} style={{display: 'flex'}}>
-            {skill.skillName}
-            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
-        </div>
-    }
-    return null;
+const mappedSkills = allSkills.map( (skill, index) =>{
+    return(
+        <Row itemID={ skill.skillType } key={ index } style={{ display: 'flex' }}>
+            <Col sm={ 4 } md={ 4 } lg={ 4 }>
+                { skill.skillName }
+            </Col>
+            <Col sm={ 8 } md={ 8 } lg={ 8 }>
+                <ProgressBar now={ skill.skillProgress } label={ `${skill.skillProgress}%` }/>
+            </Col>
+        </Row>
+    );
 })
 
-const renderDatabase = skillsObject.map((skill, index) => {
-    if (skill.skillType === "database") {
-        return <div key={index} style={{display: 'flex'}}>
-            {skill.skillName}
-            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
-        </div>
+mappedSkills.forEach(function(skill) {
+    if (skill.props.itemID === "language") {
+        return renderLanguage.push(skill) 
+    } else if (skill.props.itemID === "framework") {
+        return renderFramework.push(skill)
+    } else if (skill.props.itemID === "database") {
+        return renderDatabase.push(skill)
+    } else {
+        return renderOther.push(skill)
     }
-    return null;
-})
-
-const renderOther = skillsObject.map((skill, index) => {
-    if (skill.skillType === "other") {
-        return <div key={index} style={{display: 'flex'}}>
-            {skill.skillName}
-            <ProgressBar style={{ margin: 'auto', width: '75%'}} progress={skill.skillProgress} />
-        </div>
-    }
-    return null;
 })
 
 class Skills extends Component {
     render() {
         return (
-            <Grid id="skills-grid">
-                <Cell col={12}>
-                    <h6 className="language-h6">Languages:</h6>
-                        { renderLanguage }
-                    <h6>Frameworks:</h6>
-                        { renderFramework }
-                    <h6>Databases:</h6>
-                        { renderDatabase }
-                    <h6>Other:</h6>
-                        { renderOther }
-                </Cell>
-            </Grid>
+            <Container>
+                <h3>Skills</h3>
+                <h5 className="language-h5">Languages:</h5>
+                    { renderLanguage } 
+                <h6>Frameworks:</h6>
+                    { renderFramework }
+                <h6>Databases:</h6>
+                    { renderDatabase }
+                <h6>Other:</h6>
+                    { renderOther }
+            </Container>
         )
     }
 }
