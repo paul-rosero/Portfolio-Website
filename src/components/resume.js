@@ -39,9 +39,7 @@ class Resume extends Component {
                     <Col sm={8}>
                         <div className="resume-right-col" style={{ padding: "1em" }}>
                             <Certificates/>
-                            <h5>Education</h5>
                             <Education/>
-                            <h5>Work Experience</h5>
                             <WorkExperience/>
                         </div>
                     </Col>
