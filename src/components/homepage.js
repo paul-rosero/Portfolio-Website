@@ -2,16 +2,16 @@ import React from "react";
 import { Col, Row } from 'react-bootstrap';
 
 const allTags = [
-    {id: 1, name: "fab fa-js-square"},
-    {id: 2, name: "fab fa-react"},
-    {id: 3, name: "fas fa-gem"},
-    {id: 4, name: "fab fa-html5"},
-    {id: 5, name: "fab fa-bootstrap"},
-    {id: 6, name: "fab fa-mdb"}
+    { name: "fab fa-js-square" },
+    { name: "fab fa-react" },
+    { name: "fas fa-gem" },
+    { name: "fab fa-html5" },
+    { name: "fab fa-bootstrap" },
+    { name: "fab fa-mdb" }
 ]
 
-const renderTags = allTags.map(({ id, name }) => {
-    return <i key={ id } className={ name }></i>
+const renderTags = allTags.map(( {name}, index ) => {
+    return <i key={ index } className={ name }/>
 })
 
 function Homepage() {
