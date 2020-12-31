@@ -26,7 +26,7 @@ class Certificates extends Component {
         return (
             <Container>
                 <h5>Certificates</h5>
-                {[ renderCertificate ]}
+                { renderCertificate }
             </Container>
             
         )
