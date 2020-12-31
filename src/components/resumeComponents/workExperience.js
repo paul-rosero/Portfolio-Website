@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Cell, Grid } from 'react-mdl';
+import { Col, Row, Container } from 'react-bootstrap';
 
 const workArray = [
     { startDate: "08/2016", endDate: "Present", companyName: "Center for Pain Relief and Wellness", position: "Licensed Massage Therapist", description: ["Perform customized Swedish and/or Deep Tissue Massage to clients for 50 or 80 min, 4-5 hours straight.", "Increased client re-booking with me on a monthly basis therefore increasing business revenue.", "Maintained a stress-free work environment with the team by helping out everyone when needed or asked.", "Upheld NY State standard of SOAP notes required after each client."] },
@@ -13,27 +13,31 @@ const workArray = [
 ]
 
 const renderWork = workArray.map((job, index) => {
-    return <Grid id="workExperience-grid" key={ index }>
-        <Cell col={ 4 }>
-            <p>{ job.startDate } - { job.endDate }</p>
-        </Cell>
-        <Cell col={ 8 } >
-            <h5 style={{ marginTop: '0px', marginBottom: '0.3px' }}>{ job.companyName }</h5>
-            <h6 style={{ marginTop: '0px', marginBottom: '0.3px' }}>{ job.position }</h6>
-            {job.description.map((sentence, index) => {
-                return <ul key={index}>
-                    <li>{ sentence }</li>
-                </ul>
-            })}
-            
-        </Cell>
-    </Grid>
+    return(
+        <Row id="workExperience-grid" key={ index }>
+            <Col >
+                <p>{ job.startDate } - { job.endDate }</p>
+            </Col>
+            <Col xs={ 8 }>
+                <h5 style={{ marginTop: '0px', marginBottom: '0.3px' }}>{ job.companyName }</h5>
+                <h6 style={{ marginTop: '0px', marginBottom: '0.3px' }}>{ job.position }</h6>
+                {job.description.map((sentence, index) => {
+                    return <ul key={index}>
+                        <li>{ sentence }</li>
+                    </ul>
+                })}
+            </Col>
+        </Row>
+    );
 })
 
 class WorkExperience extends Component {
     render() {
         return (
-            [renderWork] 
+            <Container fluid>
+                <h5>Work Experience</h5>
+                { renderWork }
+            </Container>
         )
     }
 }
