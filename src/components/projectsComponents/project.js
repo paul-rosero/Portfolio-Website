@@ -1,60 +1,50 @@
 import React from 'react';
-import { Button, Card, CardActions, CardMenu, CardText, CardTitle } from 'react-mdl';
+import { Card, CardDeck } from 'react-bootstrap';
 
-function toggleTabs(activeTab) {
-    if (activeTab === 0) {
-        return (
-            <Card shadow={ 0 } style={{ width: '75%', margin: 'auto' }}>
-                <CardTitle style={{ color: '#fff', height: '500px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Starks</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
-                </CardText>
-                <CardActions border>
-                    <Button colored>Get Started</Button>
-                </CardActions>
-                <CardMenu style={{ color: '#fff' }}>
-                    <i className="fas fa-share-alt"/>
-                </CardMenu>
-            </Card>
-        )
-    } else if (activeTab === 1) {
-        return (
-            <Card shadow={ 0 } style={{ width: '75%', margin: 'auto' }}>
-                <CardTitle style={{ color: '#fff', height: '500px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Lannisters</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
-                </CardText>
-                <CardActions border>
-                    <Button colored>Get Started</Button>
-                </CardActions>
-                <CardMenu style={{ color: '#fff' }}>
-                    <i className="fas fa-share-alt"/>
-                </CardMenu>
-            </Card>
-        )
-    } else if (activeTab === 2) {
-        return (
-            <Card shadow={ 0 } style={{ width: '75%', margin: 'auto' }}>
-                <CardTitle style={{ color: '#fff', height: '500px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Targaryens</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
-                </CardText>
-                <CardActions border>
-                    <Button colored>Get Started</Button>
-                </CardActions>
-                <CardMenu style={{ color: '#fff' }}>
-                    <i className="fas fa-share-alt"/>
-                </CardMenu>
-            </Card>
-        )
-    }
-}
 
-export default function Project(props) {
-    return (
-        <div>
-            { toggleTabs(props.activeTab) }
-        </div>
-    )
-}
+
+
+// export default function Project(props) {
+//     return (
+//         <CardDeck>
+//             <Card>
+//                 <Card.Img variant="top" src="holder.js/100px160" />
+//                 <Card.Body>
+//                     <Card.Title>Card title</Card.Title>
+//                     <Card.Text>
+//                         This is a wider card with supporting text below as a natural lead-in to
+//                         additional content. This content is a little bit longer.
+//                     </Card.Text>
+//                 </Card.Body>
+//                 <Card.Footer>
+//                     <small className="text-muted">Last updated 3 mins ago</small>
+//                 </Card.Footer>
+//             </Card>
+//             <Card>
+//                 <Card.Img variant="top" src="holder.js/100px160" />
+//                 <Card.Body>
+//                     <Card.Title>Card title</Card.Title>
+//                     <Card.Text>
+//                         This card has supporting text below as a natural lead-in to additional content.{' '}
+//                     </Card.Text>
+//                 </Card.Body>
+//                 <Card.Footer>
+//                     <small className="text-muted">Last updated 3 mins ago</small>
+//                 </Card.Footer>
+//             </Card>
+//             <Card>
+//                 <Card.Img variant="top" src="holder.js/100px160" />
+//                 <Card.Body>
+//                     <Card.Title>Card title</Card.Title>
+//                     <Card.Text>
+//                         This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+//                     </Card.Text>
+//                 </Card.Body>
+//                 <Card.Footer>
+//                     <small className="text-muted">Last updated 3 mins ago</small>
+//                 </Card.Footer>
+//             </Card>
+//         </CardDeck>
+//     )
+// }
 
