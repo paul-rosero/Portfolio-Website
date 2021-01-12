@@ -16,7 +16,7 @@ function NavBar() {
 
                     <Nav.Link href="/resume" className="link-name" style={{ textDecoration: 'none', color: "white", fontWeight: "bold" }}>Resume</Nav.Link>
                     
-                    <Nav.Link href="/projects" className="link-name" style={{ textDecoration: 'none', color: "white", fontWeight: "bold" }}>Projects</Nav.Link>
+                    {/* <Nav.Link href="/projects" className="link-name" style={{ textDecoration: 'none', color: "white", fontWeight: "bold" }}>Projects</Nav.Link> */}
 
                     <Nav.Link href="/contact" className="link-name" style={{ textDecoration: 'none', color: "white", fontWeight: "bold" }}>Contact</Nav.Link>
                 </Nav>
