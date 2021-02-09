@@ -51,11 +51,11 @@ class Skills extends Component {
                 <h3>Skills</h3>
                 <h5 className="language-h5">Languages:</h5>
                     { renderLanguage } 
-                <h6>Frameworks:</h6>
+                <h5>Frameworks:</h5>
                     { renderFramework }
-                <h6>Databases:</h6>
+                <h5>Databases:</h5>
                     { renderDatabase }
-                <h6>Other:</h6>
+                <h5>Other:</h5>
                     { renderOther }
             </Container>
         )
