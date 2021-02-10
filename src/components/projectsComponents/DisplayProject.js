@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 function DisplayProject({ project }) {
-    // console.log(project)
+    console.log(project)
     return (
         <div>
             <Card className="text-center">
@@ -20,7 +20,6 @@ function DisplayProject({ project }) {
                     <small className="text-muted">Time now - updated_at = last updated time.</small>
                 </Card.Footer>
             </Card>
-            
         </div>
     )
 }
