@@ -1,50 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardDeck } from 'react-bootstrap';
 
+function Project({ projects }) {
+    const [title, setTitle] = useState('');
+    const [url, setUrl] = useState('');
+    const [description, setDescription] = useState('');
+    const [homepage, setHomepage] = useState('');
+    const [langauge, setLanguage] = useState('');
+    
+    const projected = projects.forEach( project => {
+        console.log(project)
+        return(
+            <CardDeck>
+                <Card>
+                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Body>
+                        <Card.Title>{ title }</Card.Title>
+                        <Card.Text>{ description }</Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">Last updated 3 mins ago</small>
+                    </Card.Footer>
+                </Card>
+            </CardDeck>
+        )
+    }) 
 
-
-
-export default function Project(props) {
+    console.log("projects", projects.description)
+    console.log("projected", projected)
     return (
-        <CardDeck>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional content.{' '}
-                    </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-                    </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
-        </CardDeck>
+        <div>
+            { projected }
+        </div>
+        
     )
 }
 
+export default Project;
