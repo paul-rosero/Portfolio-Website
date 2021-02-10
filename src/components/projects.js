@@ -1,38 +1,32 @@
-import React, { Component, useState } from 'react';
-import { Tab, Tabs } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import Project from './projectsComponents/project';
 
-const repos = fetch("https://api.github.com/users/paul-rosero/starred")
-.then(promise => promise.json())
-.then(data => { return data })
+function Projects() {
+    const [projects, setProjects] = useState([]);
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
 
-console.log(repos)
-function ControlledTabs() {
-    const [key, setKey] = useState('home');
-    return (
-        <Tabs id="controlled-tab-example" activeKey={key} onSelect={(k) => setKey(k)}>
-            <Tab eventKey="home" title="Home">
-                <Project repository={ repos } />
-            </Tab>
+    useEffect(() => {
+        fetch("https://api.github.com/users/paul-rosero/starred")
+        .then(promise => promise.json())
+        .then(data => { 
+            setIsLoaded(true);
+            setProjects(data);
+        }, (error) => {
+            setIsLoaded(true)
+            setError(error);
+        })
+    }, [])
 
-            <Tab eventKey="profile" title="Profile">
-                
-            </Tab>
-
-            <Tab eventKey="contact" title="Contact" disabled>
-               
-            </Tab>
-        </Tabs>
-    );
-}
-    
-class Projects extends Component {
-    
-    render() {
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+        return <div>Loading...</div>;
+    } else {
         return (
-            <div>
-                <h1>Under Construction, come back soon to check it out.</h1>
-                <ControlledTabs />
+            <div className="container">
+                <h1>My Projects:</h1>
+                <Project projects={ projects }/>
             </div>    
         );
     }
