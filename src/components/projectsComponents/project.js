@@ -1,38 +1,34 @@
-import React, { useState } from 'react';
-import { Card, CardDeck } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { CardDeck } from 'react-bootstrap';
+import DisplayProject from './DisplayProject';
 
-function Project({ projects }) {
+const Project = ({ projects }) => {
+
     const [title, setTitle] = useState('');
-    const [url, setUrl] = useState('');
-    const [description, setDescription] = useState('');
-    const [homepage, setHomepage] = useState('');
     const [langauge, setLanguage] = useState('');
-    
-    const projected = projects.forEach( project => {
-        console.log(project)
-        return(
-            <CardDeck>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>{ title }</Card.Title>
-                        <Card.Text>{ description }</Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-            </CardDeck>
-        )
-    }) 
+    const [description, setDescription] = useState('');
+    const [url, setUrl] = useState('');
+    const [homepage, setHomepage] = useState('');
+    const [id, setID] = useState(0);
+    const [updated, setUpdated] = useState(0)
 
-    console.log("projects", projects.description)
-    console.log("projected", projected)
+    
+    useEffect(() => {
+        console.log(projects)
+        setData(projects)
+    })
+    
+    const setData = () => projects.forEach( (project, i) => {
+            return(
+                console.log("project", project),
+                project
+            )   
+        }) 
+
     return (
-        <div>
-            { projected }
-        </div>
-        
+        <CardDeck>
+           <DisplayProject />     
+        </CardDeck>
     )
 }
 
