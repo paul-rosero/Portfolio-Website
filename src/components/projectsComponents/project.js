@@ -1,33 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { CardDeck } from 'react-bootstrap';
-import DisplayProject from './DisplayProject';
+import React from 'react';
+import { CardDeck, Card } from 'react-bootstrap';
 
 const Project = ({ projects }) => {
 
-    const [title, setTitle] = useState('');
-    const [langauge, setLanguage] = useState('');
-    const [description, setDescription] = useState('');
-    const [url, setUrl] = useState('');
-    const [homepage, setHomepage] = useState('');
-    const [id, setID] = useState(0);
-    const [updated, setUpdated] = useState(0)
-
-    
-    useEffect(() => {
-        console.log(projects)
-        setData(projects)
-    })
-    
-    const setData = () => projects.forEach( (project, i) => {
-            return(
-                console.log("project", project),
-                project
-            )   
-        }) 
+    const project = projects.map( ({ name, language, description, homepage, html_url }, i) => {
+       
+        return (
+            homepage ?
+                <Card className="text-center" key={ i }>
+                    <Card.Img variant="top" src="holder.js/100px160"/>
+                    <Card.Body>
+                        <Card.Title>{ name.split("-").join(" ") }</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">{ language }</Card.Subtitle>
+                        <Card.Text>{ description }</Card.Text>
+                    </Card.Body>
+                    <Card.Body>
+                        <Card.Link href={ homepage }>Portfolio Link</Card.Link>
+                        <Card.Link href={ html_url }>GitHub Link</Card.Link>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">Time now - updated_at = last updated time.</small>
+                    </Card.Footer>
+                </Card>
+            : null  
+        )     
+    })  
 
     return (
         <CardDeck>
-           <DisplayProject />     
+           { project }
         </CardDeck>
     )
 }
