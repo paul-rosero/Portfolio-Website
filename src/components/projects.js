@@ -16,7 +16,7 @@ function Projects() {
             setIsLoaded(true)
             setError(error);
         })
-    }, [])
+    });
 
     if (error) {
         return <div>Error: {error.message}</div>;
