@@ -15,7 +15,7 @@ const Project = ({ projects }) => {
                         <Card.Text>{ description }</Card.Text>
                     </Card.Body>
                     <Card.Body>
-                        <Card.Link href={ homepage }>Portfolio Link</Card.Link>
+                        <Card.Link href={ homepage }>Webpage Link</Card.Link>
                         <Card.Link href={ html_url }>GitHub Link</Card.Link>
                     </Card.Body>
                     <Card.Footer>
