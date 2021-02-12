@@ -2,9 +2,8 @@ import React from 'react';
 import { CardDeck, Card } from 'react-bootstrap';
 
 const Project = ({ projects }) => {
-
-    const project = projects.map( ({ name, language, description, homepage, html_url }, i) => {
-       
+    const project = projects.map( ({ name, language, description, homepage, html_url, updated_at }, i) => { 
+    console.log("updated_at", updated_at)      
         return (
             homepage ?
                 <Card className="text-center" key={ i }>
