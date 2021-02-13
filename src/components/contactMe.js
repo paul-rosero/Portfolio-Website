@@ -24,7 +24,7 @@ function ContactMe() {
             <Row className="contactMe-grid">
                 <Col>
                     <h2>Paul Rosero</h2>
-                    <img src="/images/ProfilePicture.png" alt="avatar" className="avatar-img"/>
+                    <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
                     <p style={{ fontWeight: "bold", padding: "1em" }}>
                         I want to thank you for taking time to visit my page. If you have any questions, ideas or want to collaborate on some work feel free to message me. I have listed my email address, Github and LinkedIn profile pages so you can reach me faster.
                     </p>
