@@ -17,7 +17,7 @@ const renderTags = allTags.map(( {name}, index ) => {
 function Homepage() {
     return(
         <Col className="homepage-grid">
-            <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
+            <img src="/images/ProfilePicture.png" alt="avatar" className="avatar-img"/>
             <div className="banner-text">
                 <h1 className="home-heading">Software Engineer</h1>
                 <h1 className="home-heading">Full Stack Web Developer</h1>
