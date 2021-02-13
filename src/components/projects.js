@@ -24,8 +24,8 @@ function Projects() {
         return <div>Loading...</div>;
     } else {
         return (
-            <div className="container">
-                <h1>My Projects:</h1>
+            <div className="container" id="projects">
+                <h1 style={{ textAlign: "center" }}>My Projects:</h1>
                 <Project projects={ projects }/>
             </div>    
         );
