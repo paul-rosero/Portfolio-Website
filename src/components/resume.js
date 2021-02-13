@@ -12,7 +12,7 @@ class Resume extends Component {
                 <Row>
                     <Col md={4}>
                         <div className="resume-left-col">
-                            <img src="/images/ProfilePicture.png" alt="avatar" className="avatar-img"/>
+                            <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
                             <h2 style={{paddingTop: '1em'}}>Paul Rosero</h2>
                             <h5>Full Stack Web Developer</h5>
                             <hr style={{ borderTop: '3px solid black', width: '60%'}}/>
