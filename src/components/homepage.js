@@ -19,7 +19,7 @@ function Homepage() {
         <div className="homepage-greeting">
             <Col className="homepage-grid">
                 <Row >
-                    <img src="/images/ProfilePicture.png" alt="avatar" className="avatar-img"/>
+                    <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
                     <div className="banner-text">
                         <h1 className="home-heading">Software Engineer</h1>
                         <h1 className="home-heading">Full Stack Web Developer</h1>
