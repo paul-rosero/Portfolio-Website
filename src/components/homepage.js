@@ -16,29 +16,25 @@ const renderTags = allTags.map(( {name}, index ) => {
 
 function Homepage() {
     return(
-        <div className="homepage-greeting">
-            <Col className="homepage-grid">
-                <Row >
-                    <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
-                    <div className="banner-text">
-                        <h1 className="home-heading">Software Engineer</h1>
-                        <h1 className="home-heading">Full Stack Web Developer</h1>
-                        <hr/>
-                        <div className="social-links">
-                            { renderTags }
-                        </div>
-                        <hr/>
-                        <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
-                        <div className="social-links">
-                            {/*Github icon */}
-                            <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" style={{ color: "white" }}/></a>
-                            {/*LinkedIn icon */}
-                            <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" style={{ color: "white" }}/></a>
-                        </div>
-                    </div>
-                </Row>
-            </Col>
-        </div>
+        <Col className="homepage-grid">
+            <img src="/images/profilePicture.png" alt="avatar" className="avatar-img"/>
+            <div className="banner-text">
+                <h1 className="home-heading">Software Engineer</h1>
+                <h1 className="home-heading">Full Stack Web Developer</h1>
+                <hr/>
+                <div className="social-links">
+                { renderTags }
+                </div>
+                <hr/>
+                <p className="home-introduction">Creating websites, starting from scratch or renovating already written websites, is something I love to do. As a beginner in the business, this website was created from scratch just so I can showcase my skills and abilities.</p>
+                <div className="social-links">
+                    {/*Github icon */}
+                    <a href="https://github.com/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" style={{ color: "white" }}/></a>
+                    {/*LinkedIn icon */}
+                    <a href="https://www.linkedin.com/in/paul-rosero" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" style={{ color: "white" }}/></a>
+                </div>
+            </div>
+        </Col>
     )
 }
 
