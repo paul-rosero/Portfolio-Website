@@ -27,8 +27,8 @@ const Project = ({ projects }) => {
                             <Card.Text>{ description }</Card.Text>
                         </Card.Body>
                         <Card.Body>
-                            <Card.Link href={ homepage }>Webpage Link</Card.Link>
-                            <Card.Link href={ html_url }>GitHub Link</Card.Link>
+                            <Card.Link href={ homepage } target="_blank" rel="noopener noreferrer">Webpage Link</Card.Link>
+                            <Card.Link href={ html_url } target="_blank" rel="noopener noreferrer">GitHub Link</Card.Link>
                         </Card.Body>
                         <Card.Footer>
                             <small className="text-muted">Updated { moment(updated_at).fromNow() }</small>
