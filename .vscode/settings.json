@@ -9,5 +9,6 @@
         "postgres sql",
         "rosero",
         "sql"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
